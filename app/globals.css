@@ -28,7 +28,7 @@ body {
   }
 
   .btn_dark_green {
-    @apply bg-green-90 px-8 py-4 text-white transition-all hover:bg-black;
+    @apply bg-green-90 px-6 py-3 text-white transition-all hover:bg-black;
   }
 
   .btn_dark_green_outline {
@@ -146,6 +146,42 @@ body {
   /* Get App */
   .get-app {
     @apply max-container relative flex w-full flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
+  }
+
+  .bg-green-gradient {
+    background: linear-gradient(
+      144.39deg,
+      #ffffff -278.56%,
+      #ff814c -78.47%,
+      #30af5b 91.61%
+    );
+  }
+
+  .sidebar {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
   }
 }
 
